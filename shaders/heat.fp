@@ -6,11 +6,14 @@ const float timescale = 1.0;
 
 void main()
 {
-	float x =  stepsize * amount * sin(stepscale * TexCoord.x) * sin(timescale * timer);
-	float y =  stepsize * amount * sin(stepscale * TexCoord.y) * sin(timescale * timer);
+	float amt = clamp(amount, 0.0, 128.0);
 
-	vec2 c = vec2(TexCoord.x + x, TexCoord.y +y);
-	vec4 color = texture(InputTexture, c);
+	vec2 offset;
+
+	offset.x =  stepsize * amt * sin(stepscale * TexCoord.x) * sin(timescale * timer);
+	offset.y =  stepsize * amt * sin(stepscale / 2 * TexCoord.y) * sin(timescale * timer);
+
+	vec4 color = texture(InputTexture, TexCoord.xy + offset);
 
 	FragColor = vec4(color.rgb, 1.0);
 }

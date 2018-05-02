@@ -1050,6 +1050,7 @@ DoomEdNums
 	18924=KittySinger
 	18925=FatSinger
 	18926=StatistDimitri
+	18927=StatistSSAscher
 	18950=Plant3
 	18951=Plant4
 	18952=Plant5
@@ -1653,6 +1654,7 @@ DoomEdNums
 	31756=RTCWTable3
 	31757=GardenUrn
 	31758=GardenUrn_Museum
+	31996=TMSSTank1
 	31997=TMIntroLight
 	31998=TMBlazko3
 	31999=FogCloud_Generator
@@ -1684,6 +1686,7 @@ DoomEdNums
 	32026=GasDrum
 	32027=GhostGate
 	32028=GhostGateHelper
+	32029=HeatEffectGiver
 	32767=SmokeMonster
 }
 
