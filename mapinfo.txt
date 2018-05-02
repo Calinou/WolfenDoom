@@ -32,7 +32,7 @@ gameinfo
 	borderflat = "textures/cncr_g29.jpg"
 
 	defaultconversationmenuclass = "BoAConversationMenu"
-	eventhandlers = "InventoryClearHandler", "WaterHandler", "CustomShaderHandler", "SpriteShadowHandler", "MineSweeperHandler"
+	eventhandlers = "InventoryClearHandler", "WaterHandler", "CustomShaderHandler", "SpriteShadowHandler", "MineSweeperHandler", "OverdrawHandler"
 	statusbarclass = "BoAStatusBar"
 
 	ForceKillScripts = true //needed for Droplets - ozy81

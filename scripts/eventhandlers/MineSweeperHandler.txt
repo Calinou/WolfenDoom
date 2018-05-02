@@ -67,3 +67,19 @@ class MineSweeperHandler : EventHandler
 		}
 	}
 }
+
+class OverdrawHandler : StaticEventHandler
+{
+	PlayerInfo p;
+
+	override void RenderOverlay(RenderEvent e)
+	{
+		PlayerInfo p = players[consoleplayer];
+
+		if (p)
+		{
+			Shader.SetUniform1f(p, "HeatOverdraw", "timer", gametic + e.FracTic);
+			Shader.SetEnabled(p, "HeatOverdraw", true);
+		}
+	}
+}

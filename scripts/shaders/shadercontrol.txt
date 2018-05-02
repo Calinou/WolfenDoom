@@ -55,3 +55,9 @@ class BlurShaderControl : ShaderControl {
 		}
 	}
 }
+
+class HeatShaderControl : ShaderControl {
+	Default {
+		ShaderControl.Shader "heatshader";
+	}
+}
